@@ -3,7 +3,7 @@ Tarea 3 del Job: Gold_Analytics
 Lee Silver, genera el análisis avanzado (esquema analytics), las tablas Gold de negocio
 y la tabla de variables para ML, y aplica optimización Delta.
 
-Parámetro: --catalog (por defecto "trabajo_final")
+Parámetro: --catalog (por defecto "aerolinea_trabajo_final")
 """
 import argparse
 
@@ -14,7 +14,7 @@ from pyspark.sql.window import Window
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--catalog", default="trabajo_final")
+    parser.add_argument("--catalog", default="aerolinea_trabajo_final")
     args, _ = parser.parse_known_args()
     return args
 

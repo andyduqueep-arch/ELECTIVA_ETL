@@ -3,7 +3,7 @@ Tarea 2 del Job: Silver_Transform
 Lee Bronze, une vuelos con aerolíneas y aeropuertos, crea columnas derivadas,
 imputa retrasos faltantes, calcula métricas por aerolínea y aeropuerto y escribe Silver.
 
-Parámetro: --catalog (por defecto "trabajo_final")
+Parámetro: --catalog (por defecto "aerolinea_trabajo_final")
 """
 import argparse
 
@@ -13,7 +13,7 @@ from pyspark.sql import functions as F
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--catalog", default="trabajo_final")
+    parser.add_argument("--catalog", default="aerolinea_trabajo_final")
     args, _ = parser.parse_known_args()
     return args
 

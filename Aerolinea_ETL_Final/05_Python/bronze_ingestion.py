@@ -3,7 +3,7 @@ Tarea 1 del Job: Bronze_Ingestion
 Lee los CSV del volumen de Unity Catalog, convierte tipos, elimina nulos en las claves,
 agrega ingest_timestamp y escribe las tablas Delta de la capa Bronze.
 
-Parámetro: --catalog (por defecto "trabajo_final")
+Parámetro: --catalog (por defecto "aerolinea_trabajo_final")
 """
 import argparse
 
@@ -13,7 +13,7 @@ from pyspark.sql import functions as F
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--catalog", default="trabajo_final")
+    parser.add_argument("--catalog", default="aerolinea_trabajo_final")
     args, _ = parser.parse_known_args()
     return args
 
